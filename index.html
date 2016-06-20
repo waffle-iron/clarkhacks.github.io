@@ -1,258 +1,63 @@
-<html lang="en"><head>
- <link rel="shortcut icon" type="image/png" href="https://yt3.ggpht.com/-dnA_x8g6sug/AAAAAAAAAAI/AAAAAAAAAAA/yInXwW2SBm0/s100-c-k-no-rj-c0xffffff/photo.jpg">
-    <meta charset="utf-8">
-    <meta name="description" content="Welcome to my Blog! Here you can find tutorials and more on Web Design and Arduino projects.">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css">
+<html><head>
 
-    <title>Clark hacks | Blogs</title>
+ <link rel="shortcut icon" type="image/png" href="https://yt3.ggpht.com/-dnA_x8g6sug/AAAAAAAAAAI/AAAAAAAAAAA/yInXwW2SBm0/s100-c-k-no-rj-c0xffffff/photo.jpg">
+
+
+
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style type="text/css">
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url();
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-        body { background: #333; }
-
-img { border: 0; max-width: 100%; }
-
-.page-header h1 {
-  font-size: 3.26em;
-  text-align: center;
-  color: #efefef;
-  text-shadow: 1px 1px 0 #000;
-}
-
-/** timeline box structure **/
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-}
-
-.timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eee;
-  left: 50%;
-  margin-left: -1.5px;
-}
-
-.tldate {
-  display: block;
-  width: 200px;
-  background: #414141;
-  border: 3px solid #212121;
-  color: #ededed;
-  margin: 0 auto;
-  padding: 3px 0;
-  font-weight: bold;
-  text-align: center;
-  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
-}
-
-.timeline li {
-  margin-bottom: 25px;
-  position: relative;
-}
-
-.timeline li:before, .timeline li:after {
-  content: " ";
-  display: table;
-}
-.timeline li:after {
-  clear: both;
-}
-.timeline li:before, .timeline li:after {
-  content: " ";
-  display: table;
-}
-
-/** timeline panels **/
-.timeline li .timeline-panel {
-  width: 46%;
-  float: left;
-  background: #fff;
-  border: 1px solid #d4d4d4;
-  padding: 20px;
-  position: relative;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-}
-
-/** panel arrows **/
-.timeline li .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.timeline li .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
-  top:0;
-  right:0;
-  display: none;
-  border: 0;
-}
-
-.timeline li.timeline-inverted .timeline-panel {
-  float: right;
-}
-
-.timeline li.timeline-inverted .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline li.timeline-inverted .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
-
-/** timeline circle icons **/
-.timeline li .tl-circ {
-  position: absolute;
-  top: 23px;
-  left: 50%;
-  text-align: center;
-  background: #6a8db3;
-  color: #fff;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  margin-left: -16px;
-  border: 3px solid #90acc7;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  z-index: 99999;
-}
-
-
-/** timeline content **/
-
-.tl-heading h4 {
-  margin: 0;
-  color: #c25b4e;
-}
-
-.tl-body p, .tl-body ul {
-  margin-bottom: 0;
-}
-
-.tl-body > p + p {
-  margin-top: 5px;
-}
-
-/** media queries **/
-@media (max-width: 991px) {
-  .timeline li .timeline-panel {
-    width: 44%;
-  }
-}
-
-@media (max-width: 700px) {
-  .page-header h1 { font-size: 1.8em; }
-
-  ul.timeline:before {
-    left: 40px;
-  }
-
-  .tldate { width: 140px; }
-
-  ul.timeline li .timeline-panel {
-    width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
-  }
-
-  ul.timeline li .tl-circ {
-    top: 22px;
-    left: 22px;
-    margin-left: 0;
-
-  }
-  ul.timeline > li > .tldate {
-    margin: 0;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    float: right;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-}
-
-.white1 {
-  color: white;
-}
-    </style>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container">
 
 
-      <header class="page-header">
-    <h1 class="hidden-xs hidden-sm">Clark Weckmann's Blog!</h1>
-  <div class="container">
-<center>
+
+<meta charset="utf-8">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://vinitkumar.me/white-paper/css/base.min.css" type="text/css">
+<link rel="stylesheet" href="http://vinitkumar.me/white-paper/css/github.min.css" type="text/css">
+<link rel="stylesheet" href="http://vinitkumar.me/white-paper/css/octicons.css" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"><style>
+  body {
+    background-image: url("https://git.io/vorn9");
+    background-color: #cccccc;
+background-repeat:no-repeat;
+background-position: center;
+background-attachment: fixed;
+  background-size:cover
+}
+  .jumbotron {
+    padding: 0.5em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    }
+}</style>
+</head>
+<body>
+<header class="page-header">
+
+  <center>
     <span style="" class="navigationbuttons">
       <div class="btn-group pull-center" role="group" aria-label="navi">
       <button onclick="window.location.href='#'" type="button" class="btn btn-primary">Home</button>
@@ -267,69 +72,81 @@ img { border: 0; max-width: 100%; }
 </div>
 </span>
 </center>
-</div>
 
   </header>
-<div class="jumbotron">
+<div style="margin-right: 7%; margin-left: 7%" class="panel">
+<div class="container">
+<p class="intro">
+White Paper is a Jekyll theme most suited to be used on tech blogs that like their content to shine.
+</p><div class="jumbotron">
         <h1>Clark Hacks</h1>
         <h3 class="lead">Arduino • Web Design • Circuit Skills</h3>
         <p><a class="btn btn-lg btn-success" href="http://eepurl.com/b3CUkX" role="button">Sign up for email today!</a></p>
       </div>
-
-      <div class="white1">
-        <div class="col-lg-6">
-          <h4><a href="tech.html">Tech</a></h4>
-          <p>Stand alone Arduino and more!</p>
-
-          <h4><a href="web.html">Web</a></h4>
-          <p>Web Design!</p>
-
-          <h4><a href="tips.html">Tips and Tricks</a></h4>
-          <p>Some AMAZING Tips and Tricks! Even some Life Hacks!</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4><a href="reviews.html">Reviews</a></h4>
-          <p>Watch and me review products!</p>
-
-
-
-
-
-
-        </div>
-      </div>
-
-
-<div class="row">
-
-
-<div class="col-lg-12">
-  <hr>
-    <div class="col-md-8">
-      <div class="btn-group" role="group" aria-label="social">
-|<button onclick="window.location.href='https://www.youtube.com/channel/UC2ZLU3UQYTfc-n95fN3bydQ?sub_confirmation=1'" type="button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="left" title="Thank You!">Blog</button>
-|<button onclick="window.location.href='https://www.patreon.com/clarkhacks?ty=h'" type="button" class="btn btn-warning btn-sm">Patreon</button>
-|<button onclick="window.location.href='#'" type="button" class="btn btn-secondary btn-sm">RSS Feed</button>
-|<button onclick="window.location.href='Pages/raw/raw.html'" type="button" class="btn btn-info btn-sm">All Source Codes</button>
+<div class="listing">
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/06/12/On-Using-What-You-Already-Have.html">Using What You Already Have</a></h2>
+<p class="post-date">12 Jun 2014</p>
+<p></p><p>Sometimes we keep looking for resources everywhere only to realize that we had
+it with us the whole time. Situation like these might arise when you have too
+many choices. I too faced these moments before. It is a tough situation indeed.</p>
+<p></p>
 </div>
-    </div>
-    <div class="col-md-4">
-      <p class="muted pull-right">All rights reserved</p>
-    </div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/05/01/the-pragmatic-programmer-checklist.html">The Pragmatic Programmer Checklist</a></h2>
+<p class="post-date">01 May 2014</p>
+<p></p><p>Last year, I read a great book on Programming and development (The Pragmatic Programmer).
+Here is a gist of checklist you must do in case you are developer. These are very good
+and for sure will help you evolve as a better developer.</p>
+<p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/02/26/simple-state-machine-framework-in-c-number.html">Simple State Machine Framework in c#</a></h2>
+<p class="post-date">26 Feb 2014</p>
+<p></p><p>This blog post covers a very simple, light weight, yet flexible state machine framework in C# .Net.</p>
+<p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/02/15/setup-a-local-gitignore-without-messing-up-project.html">Setup A Local Gitignore Without Messing Up Project</a></h2>
+<p class="post-date">15 Feb 2014</p>
+<p></p><p>A lot of us use Git for Version Control. If you have used git, you must be aware of .gitignore files. It contains the list of all file and directories you want git to ignore so that it would nevet get committed. But if you work in multi person team. You might not have liberty to change the projects gitignore. What to do then?</p>
+<p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/02/14/how-to-use-facebook-page-albums-as-image-source-in-django.html">How To Use Facebook Page Albums As Image Source in Django</a></h2>
+<p class="post-date">14 Feb 2014</p>
+<p></p><p>Lot of companies use Facebook for marketing their products. Facebook is mainly built around images. In fact the whole ecosystem is fueled by images. In order to scale for the vast user base of Facebook, they have done a really good job.</p>
+<p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/02/13/migrating-to-octopress.html">Migrating To Octopress</a></h2>
+<p class="post-date">13 Feb 2014</p>
+<p></p><p>Finally after much ado, I am moving Gotchacode to Octopress. There are various reasons for doing it.
+I am listing some of them here:</p>
+<p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/01/music-movies-and-life.html">Music, Movies and Life</a></h2>
+<p class="post-date">12 Jan 2014</p>
+<p></p><div class="css-full-post-content js-full-post-content">
+<div dir="ltr" style="text-align: left;" trbidi="on">I love watching Movies and I love Music. They are almost inseperable part of life. I love the way they could touch and move your life more than you could imagine. I remember watching "The Social Network" almost 50 times in college. It served as a push to write more code and do awesome in life.<div><br></div><div>Well, it might sound really strange but for last 10 years or so. I just let life flow in the natural way. I failed quite sometimes, achieved success as well. Made some long lasting friends, lost some people I felt who were my friends.</div><div><br></div><div>The great thing is that in all these experiences, I realised that what is the true purpose of my life. They say, there are just two important days in your life.</div><div><br></div><blockquote class="tr_bq">The day when you are born, and the day you find out why?</blockquote>I think I just found out the purpose of my life. It's not something I would want to disclose and claim I am going to achieve. It is the way my thinking changed and the choice of life I am going to make.<br><br>Also, I would love to thank the wonderful readers of this blog - which initially started casually just to empty my mind on topics I felt were relevant at that time. For sure there are some not so good posts as well. But again, this blog is just me writing what comes in my mind. And if some of those helps someone or guide someone. Why not?<br><br></div>
+</div><p></p>
+</div>
+<div class="post other link">
+<h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper/2014/01/happy-new-year-2014.html">Happy New Year 2014</a></h2>
+<p class="post-date">01 Jan 2014</p>
+<p></p><div class="css-full-post-content js-full-post-content">
+<div dir="ltr" style="text-align: left;" trbidi="on">A very happy new year to all the readers of this blog. To start with, I would try to publish a post at least once a week so that it may satisfy your appetite on a regular basis. Also, I am meditating about something new on this blog. It will be revealed when the time comes. With that said, have an amazing start to the year.</div>
+</div><p></p>
+</div>
+</div>
+
+<!--<div class="pagination">
+<span class="next"><span class="mega-octicon octicon-playback-rewind" style="min-width: 32px;"></span></span>
+<span class="previous"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></span>
+</div>-->
   </div>
 </div>
-
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
-
-
-
-
-
 
 
 
