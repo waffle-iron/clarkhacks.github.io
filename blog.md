@@ -1,12 +1,10 @@
-# GitHub README template
+# Clark Hacks - Official Blog!
 
-Intro section
+## Links
 
-## Table of Contents
-
-1. [Implementation](#implementation)
-1. [Contributing](#contributing)
-1. [License](#license)
+1. [Home](#implementation)
+1. [Intructables](#contributing)
+1. [Patreon](#license)
 
 
 ## Implementation
