@@ -120,7 +120,7 @@
                   </div>
 
                   <div class="panel-footer">
-                    <span class="label label-default">Welcome</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                    <span class="label label-default">Welcome</span> <span class="label label-default">Arduino</span> <span class="label label-default">July</span>
                   </div>
                 </div>
 
@@ -141,16 +141,70 @@
                   </div>
 
                   <div class="panel-body">
-                    <a href="#" class="thumbnail">
-                      <img alt="Image" src="http://i.imgur.com/tAHVmXi.jpg">
-                    </a>
+                    <pre><font color="#95a5a6">/*</font>
+<font color="#95a5a6"> &nbsp;Button</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> Turns on and off a light emitting diode(LED) connected to digital</font>
+<font color="#95a5a6"> pin 13, when pressing a pushbutton attached to pin 2.</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> The circuit:</font>
+<font color="#95a5a6"> * LED attached from pin 13 to ground</font>
+<font color="#95a5a6"> * pushbutton attached to pin 2 from +5V</font>
+<font color="#95a5a6"> * 10K resistor attached to pin 2 from ground</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> * Note: on most Arduinos there is already an LED on the board</font>
+<font color="#95a5a6"> attached to pin 13.</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> created 2005</font>
+<font color="#95a5a6"> by DojoDave &lt;</font><u><font color="#95a5a6">http://www.0j0.org</font></u><font color="#95a5a6">&gt;</font>
+<font color="#95a5a6"> modified 30 Aug 2011</font>
+<font color="#95a5a6"> by Tom Igoe</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> This example code is in the public domain.</font>
+<font color="#95a5a6"></font>
+<font color="#95a5a6"> </font><u><font color="#95a5a6">http://www.arduino.cc/en/Tutorial/Button</font></u><font color="#95a5a6"></font>
+<font color="#95a5a6"> */</font>
+
+<font color="#434f54">// constants won't change. They're used here to</font>
+<font color="#434f54">// set pin numbers:</font>
+<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#000000">buttonPin</font> <font color="#434f54">=</font> <font color="#000000">2</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// the number of the pushbutton pin</font>
+<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#000000">ledPin</font> <font color="#434f54">=</font> &nbsp;<font color="#000000">13</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// the number of the LED pin</font>
+
+<font color="#434f54">// variables will change:</font>
+<font color="#00979c">int</font> <font color="#000000">buttonState</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// variable for reading the pushbutton status</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">// initialize the LED pin as an output:</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">ledPin</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">// initialize the pushbutton pin as an input:</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">buttonPin</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">// read the state of the pushbutton value:</font>
+ &nbsp;<font color="#000000">buttonState</font> <font color="#434f54">=</font> <font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">buttonPin</font><font color="#000000">)</font><font color="#000000">;</font>
+
+ &nbsp;<font color="#434f54">// check if the pushbutton is pressed.</font>
+ &nbsp;<font color="#434f54">// if it is, the buttonState is HIGH:</font>
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">buttonState</font> <font color="#434f54">==</font> <font color="#00979c">HIGH</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#434f54">// turn LED on:</font>
+ &nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">ledPin</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font> <font color="#5e6d03">else</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#434f54">// turn LED off:</font>
+ &nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">ledPin</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+
+</pre>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation... <a href="#">Read more</a>
                   </div>
 
                   <div class="panel-footer">
-                    <span class="label label-default">Image</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                    <span class="label label-default">Arduin</span> <span class="label label-default">Examples</span> <span class="label label-default">July</span>
                   </div>
                 </div>
               </div>
@@ -172,7 +226,11 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
               <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-          </div></div>
+          </div>
+  <br>
+<div class="panel-footer">
+                    <span class="label label-default">Arduin</span> <span class="label label-default">Examples</span> <span class="label label-default">July</span>
+                  </div></div>
           <div class="post">
 
             <h1><span class="fa fa-cogs" style="min-width: 32px;"></span><a href="/white-paper/2014/06/12/On-Using-What-You-Already-Have.html" class="chan">Using What You Already Have</a></h1>
@@ -191,6 +249,7 @@
         <span class="previous"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></span>
       </div>-->
     </div>
+
 
 
 
