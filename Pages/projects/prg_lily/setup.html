@@ -1,9 +1,9 @@
 <html lang="en"><head>
     <meta charset="utf-8">
-
+    
     <title>LilyPad | Uno</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         .wizard {
     margin: 20px auto;
@@ -60,7 +60,7 @@ span.round-tab i{
 .wizard li.active span.round-tab {
     background: #fff;
     border: 2px solid #5bc0de;
-
+    
 }
 .wizard li.active span.round-tab i{
     color: #5bc0de;
@@ -146,8 +146,8 @@ span.round-tab:hover {
     }
 }
     </style>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -203,10 +203,10 @@ span.round-tab:hover {
                     </div>
                     <div class="tab-pane" role="tabpanel" id="step3">
                         <h3>IDE Set up</h3>
-                        <img src="IDE.PNG" style="width: auto; height: 35%;"><br><p>Select the Arduino uno on com port <br> Set programmer to AVRISP mkll <br> and for the board select LilyPad Arduino.</p>
+                        <img src="IDE.png" style="width: auto; height: 35%;"><br><p>Select the Arduino uno on com port <br> Set programmer to AVRISP mkll <br> and for the board select LilyPad Arduino.</p>
                         <ul class="list-inline pull-right">
                             <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-
+                            
                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                         </ul>
                     </div>
@@ -243,12 +243,12 @@ span.round-tab:hover {
 $(document).ready(function () {
     //Initialize tooltips
     $('.nav-tabs > li a[title]').tooltip();
-
+    
     //Wizard
     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
 
         var $target = $(e.target);
-
+    
         if ($target.parent().hasClass('disabled')) {
             return false;
         }
