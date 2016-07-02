@@ -69,7 +69,7 @@
     }</style>
   
 <meta name="google-site-verification" content="BeHQ2uHiZT6q9pKuJMRS7D1cs6gaqNCA1ocAoEnRYqw">
-<script type="text/javascript" charset="utf-8" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/1.0/popup.js"></script><script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"d19d382bd9f6e9960edae5a00","lid":"1881c8d7b1"}) })</script><link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/downloads.mailchimp.com/css/signup-forms/popup/1.0/modal.css" media="all"><style type="text/css"></style></head>
+<script type="text/javascript" charset="utf-8" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/1.0/popup.js"></script><script type="text/javascript" charset="utf-8" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/1.0/popup.js"></script><script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"d19d382bd9f6e9960edae5a00","lid":"1881c8d7b1"}) })</script><link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/downloads.mailchimp.com/css/signup-forms/popup/1.0/modal.css" media="all"><style type="text/css"></style><link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/downloads.mailchimp.com/css/signup-forms/popup/1.0/modal.css" media="all"><style type="text/css"></style></head>
   <body style="overflow: auto;">
 
     <!--Start Header-->
@@ -256,13 +256,16 @@ quis nostrud exercitation... <a href="#">Read more</a> </div>
         <span class="previous"><span class="mega-octicon octicon-playback-fast-forward" style="min-width: 32px;"></span></span>
       </div>-->
 
-    </div><iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="900" height="700">
-</iframe>
-<script type="text/javascript">
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/clarkhacks'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
+    </div>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div id="comments"></div>
+<script>
+gapi.comments.render('comments', {
+    href: window.location,
+    width: '624',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
 </script>
 <div class="bottom_navbar" style="margin-left: 4%"><div class="btn-group" role="group" aria-label="social"><button onclick="window.location.href='https://www.youtube.com/channel/UC2ZLU3UQYTfc-n95fN3bydQ?sub_confirmation=1'" type="button" class="btn btn-default btn-sm"><i class="fa fa-github"></i> Fork Me</button><button onclick="window.location.href='https://www.patreon.com/clarkhacks?ty=h'" type="button" class="btn btn-warning btn-sm">Patreon</button><button onclick="window.location.href='#'" type="button" class="btn btn-info btn-sm">Up &amp; Coming?</button>
 <div id="mailchimp">
@@ -300,15 +303,5 @@ quis nostrud exercitation... <a href="#">Read more</a> </div>
 
 
 
-<div id="PopupSignupForm_0" widgetid="PopupSignupForm_0">
-    <!-- MC MODAL -->
-    <div class="mc-modal" data-dojo-attach-point="modalContainer" style="display: none;">
-        <div class="mc-closeModal" data-action="close-mc-modal" data-dojo-attach-point="modalClose">close</div>
-        <div class="mc-layout__modalContent">
-        	<iframe src="about:blank" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="width: 100%; height: 340px;" data-dojo-attach-point="iframeContainer"></iframe>
-        </div>
-    </div>
 
-    <!-- MC MODAL OVERLAY -->
-    <div class="mc-modal-bg" data-dojo-attach-point="modalOverlay" style="display: none;"></div>
-</div></body></html>
+</body></html>
