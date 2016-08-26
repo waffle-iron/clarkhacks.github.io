@@ -4,11 +4,11 @@ title: Mom's Machete
 tags: [song, parody] 
 ---
 
-Mom's machete. 
+#### Mom's machete. 
 
 Dad's bleeding from his throat already. Shit cops on their way everybody get ready dad's going 6 food down hole in the ground. 
 
-Knock knock at the door. Digging all damn day long. Arms weak shovel's getting heavy blood colored dirt shit still not ready.
+Knock knock at the door. Digging all damn day long. Arms weak shovel's getting heavy blood colored dirt!?_Shit_ still not ready.
 
 Kids get the tarp we gotta get back to home fo' the cops come on in already hurry up I'm burning the spaghetti! 
 
