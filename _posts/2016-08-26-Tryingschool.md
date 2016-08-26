@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tryingschool
+title: Trying School
 tags: [mono] 
 ---
 
