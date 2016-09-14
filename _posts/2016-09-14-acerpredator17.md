@@ -19,6 +19,7 @@ __Ram:__
 * Handle max of 64gb stable.
 
 __Display:__
+* 4k
 * Glossy: No
 * 17.3 inch 16:9
 * 255 PPI
