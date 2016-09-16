@@ -22,7 +22,7 @@ Social Mark is a framework for getting social! It comes jam-packed with pre-defi
 
 [Social Mark Display Site](https://clarkhacks-labs.github.io/SocialMark/)
 
-
+<!-- more -->
 __How do I use it?__
 
 1. Copy the CSS file link.

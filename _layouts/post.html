@@ -6,18 +6,24 @@
 <body data-spy="scroll">
 {% include header.html %}
 {% include promo.html %}
+{% assign post = page %}
 <div class="container">
-  <h2>Panel Footer</h2>
-{% for post in site.posts %}
-  <div class="panel panel-primary">
-    <div class="panel-heading"><h3>{{ post.title }}</h2></div>
-    <div class="panel-body">
-    {{ post.excerpt }}
-</div>
-    <div class="panel-footer"><a class="btn btn-cta-primary" href="{{ post.url }}">read more</a></div>
-  </div>
-{% endfor %}
-{% include comments.html %}
+  <header class="page-header">
+    <h1>{{ post.title }}</h1>
+  </header>
+
+  <ul class="timeline">
+    <li><div class="tldate">{{ post.date | date: '%B %d, %Y' }}</div></li>
+
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+{{ post.content }}
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 {% include contact.html %}
 {% include footer.html %}

@@ -12,7 +12,7 @@ __What It Displays__
 * UserName
 * User Image
 * Donate Buttons
-
+<!-- more -->
 __Example__
 
 Note: This card is just an example image if you'd like to donate to SheldonTheTurtle.com head over [here](https://www.patreon.com/sheldontheturtle).

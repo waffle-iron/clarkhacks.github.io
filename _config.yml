@@ -6,6 +6,8 @@ tagline:             A lovely page all about Clark Hacks
 url:                 "https://clarkhacks.github.io/" # insert your site's URL
 baseurl:             "/"
 
+excerpt_separator: <!-- more -->
+
 # About/contact
 author: # you can edit these to be your personal details
   name:              Clark Weckmann
