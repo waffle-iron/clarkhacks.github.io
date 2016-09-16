@@ -1,5 +1,7 @@
-
-
+body { background-color: #333; }
+.panel-primary .panel-heading {
+  background-color: #414141;
+}
 img { border: 0; max-width: 100%; }
 
 .page-header h1 {
