@@ -1,40 +1,43 @@
-baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "username.github.io" # the base hostname & protocol for your site.
-title: "ClarkHacks"
 
-paginate: 10 #articles per page
-paginate_path: /blog/page:num #makes pagination working
+# Setup
+title:               Clark-Hacks
+email:               cweckmaniii@gmail.com
+tagline:             A lovely page all about Clark Hacks
+url:                 "" # insert your site's URL
+baseurl:             ""
 
-#contacts
-git: "https://github.com/clarkhacks"  #your github url here.
-stackoverflow: "httpa://stackoverflow.com/users/1231365/railsr" #Add your stackoverflow url here.
+# About/contact
+author: # you can edit these to be your personal details
+  name:              Clark Weckmann
+  url:               https://clarkhacks.github.io/
+  email:             cweckmaniii@gmail.com
 
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
+# Bing services
+bing_verification:
 
+# Social
+github_username: clarkhacks
+twitter_username:
+instagram_username:
+facebook:
+linkedin_username:
+dribbble_username:
+
+# Custom vars
+version:             1.0.1
+github:
+  repo:              https://github.com/clarkhacks/clarkhacks.github.io
+
+# Gems - Dependencies for this theme
 gems:
-  - jekyll-sitemap
-  - jekyll-paginate
+  # None currently
 
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
-
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-
-permalink: /posts/:title
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Build settings
+markdown:     kramdown
+permalink:    pretty
