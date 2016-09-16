@@ -1,0 +1,32 @@
+{% for posts in sit.post %}
+<div class="container">
+	<div class="blog-row-spacing"></div>
+
+	<div class="row blog-row bg-color-white block-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="row blog-tags">
+            	  {% for tags in page.tags %}
+    <span>{{ tags }}</span>
+
+            </div>
+
+            <div class="row blog-title">
+            	<a href="#">{{ post.title }}</a>
+            </div>
+
+<!--             <div class="row blog-image center-block">
+                <figure class="effect-layla">
+                    <img src="Some Image Here">
+                    <figcaption></figcaption>
+                </figure>
+            </div> -->
+
+            <div class="row blog-content">
+{{ post.content}}
+            </div>
+        </div>
+    </div>
+	<div class="blog-row-spacing"></div>
+</div>
+{% endfor %}
+{% endfor %}

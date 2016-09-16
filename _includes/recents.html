@@ -11,7 +11,7 @@
               {{ post.content | split:'<!--break-->' | first }}
 {% if post.content contains '<!--break-->' %}
 <br />
-<a class="btn btn-cta-primary" href="{{ post.url }}">read more</a>
+<a class="btn btn-cta-primary" href="blog#{{ post.title }}">read more</a>
 {% endif %}
             </div>
              {% endfor %}
