@@ -7,17 +7,16 @@
 {% include header.html %}
 {% include promo.html %}
 <div class="container">
-  <h2>Blog Posts</h2>
+  <h2 style="margin: 4%">Blog Posts</h2>
 {% for post in site.posts %}
-  <div class="panel panel-primary">
-    <div class="panel-heading"><h3>{{ post.title }}</h2></div>
-    <div class="panel-body">
+  <div class="well">
+    <div class="well-title"><h3>{{ post.title }}</h2></div>
+    <div class="well-body">
     {{ post.excerpt }}
 </div>
-    <div class="panel-footer"><a class="btn btn-cta-primary" href="{{ post.url }}">read more</a></div>
+    <div class="well-footer"><a class="btn btn-cta-primary" href="{{ post.url }}">read more</a></div>
   </div>
 {% endfor %}
-{% include comments.html %}
 </div>
 {% include contact.html %}
 {% include footer.html %}

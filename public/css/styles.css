@@ -294,6 +294,9 @@ color:rgba(255,255,255,0.7);
   margin-right: 5px;
   color: #fff;
 }
+.recents-front {
+  color: #000;
+}
 /* ======= Docs Section ======= */
 .docs {
   padding: 80px 0;
@@ -324,7 +327,7 @@ color:rgba(255,255,255,0.7);
   margin-bottom: 60px;
 }
 .docs .sub-title {
-color:rgba(255,255,255,0.7);
+color: #000;
 }
 .docs a {
   color: #a0a0a0;
