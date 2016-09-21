@@ -84,6 +84,7 @@ h2 {
 
   .tldate { width: 140px; }
 
+
   ul.timeline li .timeline-panel {
     width: calc(100% - 90px);
     width: -moz-calc(100% - 90px);
@@ -101,7 +102,7 @@ h2 {
   }
 
   ul.timeline > li > .timeline-panel {
-    float: right;
+    width: 100%;
   }
 
   ul.timeline > li > .timeline-panel:before {
@@ -117,4 +118,8 @@ h2 {
     left: -14px;
     right: auto;
   }
+}
+.timeline a {
+  text-decoration: underline;
+  color: #101010;
 }
