@@ -33,8 +33,11 @@
 #social {
   margin: 20px 10px;
   text-align: center;
+  
 }
-
+.btn-res {
+  margin: 5px;
+}
 .smGlobalBtn{ /* global button class */
     display: inline-block;
     position: relative;
