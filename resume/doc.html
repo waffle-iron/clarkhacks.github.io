@@ -19,17 +19,10 @@
   <link rel="canonical" href="https://clarkhacks.github.io/resume/doc">
   <link rel="alternate" type="application/rss+xml" title="Clark Weckmann" href="feed.xml">
   <style>
-  	@media screen
-{
-    .noPrint{}
-    .noScreen{display:none;}
-}
+@media print  { .noprint  { display: none; } }
+@media screen { .noscreen { display: none; } }
 
-@media print
-{
-    .noPrint{display:none;}
-    .noScreen{}
-}
+
   </style>
 </head>
 
@@ -161,12 +154,11 @@
               </ul>
               
               <!--ONLY FOR PRINTER -->
-              <ul class="post-list noScreen">
+              <ul class="noScreen post-list">
 
 
                 <li>
                     <strong>HTML</strong>
-                  </div>
                 </li>
                 <li>
 <strong>CSS</strong>
