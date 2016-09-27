@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/clarkhacks/clarkhacks.github.io.png?label=ready&title=Ready)](https://waffle.io/clarkhacks/clarkhacks.github.io)
 # devAid **Jekyll** Theme
 
 <p align="center">
